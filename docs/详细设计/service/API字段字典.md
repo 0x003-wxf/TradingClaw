@@ -101,6 +101,11 @@
 | `revoked` | boolean | 是否已吊销或注销成功 |
 | `unbound` | boolean | 是否已解绑成功 |
 | `credential_ref` | string | 密钥或登录凭据引用 |
+| `provider_code` | string | 外部接入方标识，如券商或交易所编码 |
+| `adapter_auth_mode` | string | 适配认证模式，如 `INTERACTIVE_LOGIN`、`API_SIGNATURE` |
+| `adapter_session_mode` | string | 适配会话模式，如 `STATEFUL_SESSION`、`STATELESS_SIGNED`、`REFRESHABLE_TOKEN` |
+| `challenge_mode` | string | 认证挑战方式，如 `NONE`、`IMAGE_CAPTCHA`、`SMS_OTP`、`TOTP` |
+| `secret_schema` | string | 凭据内容结构标识，如 `username_password_captcha_v1` |
 | `broker_code` | string | 券商编码 |
 | `account_no` | string | 外部账户号 |
 | `captcha_text` | string | 验证码文本 |
